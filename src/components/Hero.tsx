@@ -9,7 +9,7 @@ export default function Hero() {
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-purple-700">
           Hi, My name is <span className="text-primary">Selin Yucelbak</span>
         </h1>
-        <div className="flex flex-col md:flex-row md:justify-around w-full md:w-1/2 mt-10">
+        <div className="flex flex-col md:flex-row md:gap-4 md:justify-around w-full md:w-1/2 mt-10">
           <Image src="/image.jpeg" alt="Selin Yucelbak" width={300} height={300} className="flex rounded-full justify-center shadow-md shadow-purple-700 object-cover" />
           <div className="flex flex-col items-center">
             <p className="mt-4 max-w-[700px] text-lg text-muted-foreground sm:text-xl">

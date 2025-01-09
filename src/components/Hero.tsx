@@ -1,22 +1,29 @@
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { Card } from "./ui/card"
 
 export default function Hero() {
   return (
-    <section className="flex w-full px-20 sm:px-5 py-24 sm:py-32">
-      <div className="flex w-full flex-col items-center text-center">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+    <div className="flex w-full justify-center">
+      <Card className="flex w-full flex-col items-center md:w-1/2 mt-10 text-center px-20 sm:px-5 py-24 sm:py-32">
+        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-purple-700">
           Hi, My name is <span className="text-primary">Selin Yucelbak</span>
         </h1>
-        <p className="mt-4 max-w-[700px] text-lg text-muted-foreground sm:text-xl">
-          Adam loves me!
-        </p>
-        <div className="mt-8">
-          <Button asChild>
-            <a href="#contact">Get in Touch</a>
-          </Button>
+        <div className="flex flex-row justify-around w-full md:w-1/2 mt-10">
+          <Image src="/image.jpeg" alt="Selin Yucelbak" width={300} height={300} className="rounded-full shadow-md shadow-purple-700 w-60 h-60 object-cover" />
+          <div className="flex flex-col items-center">
+            <p className="mt-4 max-w-[700px] text-lg text-muted-foreground sm:text-xl">
+              Adam loves me!
+            </p>
+            <div className="mt-8">
+              <Button asChild className="bg-purple-700 text-white border-black border-1">
+                <a href="#contact">Get in Touch</a>
+              </Button>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </Card>
+    </div>
   )
 }
 

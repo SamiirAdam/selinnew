@@ -4,9 +4,9 @@ import { Textarea } from "@/components/ui/textarea"
 
 export default function Contact() {
   return (
-    <section id="contact" className="container py-24 sm:py-32">
+    <section id="contact" className="flex flex-col w-full py-24 sm:py-32">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Get in Touch</h2>
-      <form className="max-w-md mx-auto space-y-6">
+      <form className="max-w-md mx-auto w-80 space-y-6">
         <div>
           <Input type="text" placeholder="Your Name" required />
         </div>

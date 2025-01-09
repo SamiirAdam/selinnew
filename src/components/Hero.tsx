@@ -5,7 +5,7 @@ import { Card } from "./ui/card"
 export default function Hero() {
   return (
     <div className="flex w-full justify-center">
-      <Card className="flex w-full flex-col items-center md:w-1/2 mt-10 text-center px-20 sm:px-5 py-24 sm:py-32">
+      <Card className="flex w-full flex-col bg-blue-200/10 border-2 items-center md:w-1/2 mt-10 text-center px-20 sm:px-5 py-24 sm:py-32">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-purple-700">
           Hi, My name is <span className="text-primary">Selin Yucelbak</span>
         </h1>

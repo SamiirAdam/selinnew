@@ -12,7 +12,7 @@ export function withClick<T extends object>(
     ComponentFront: ComponentType<T>,
     ComponentBack: ComponentType<T>,
 ): ComponentType<T> {
-    return (props) => {
+    const WrappedComponent = (props: T) => {
         const [isFlipped, setIsFlipped] = useState(false);
 
         const handleClick = () => {
@@ -125,4 +125,8 @@ export function withClick<T extends object>(
             </motion.div>
         )
     }
+
+    WrappedComponent.displayName = `withClick(${ComponentFront.displayName || ComponentFront.name || 'ComponentFront'})`;
+
+    return WrappedComponent;
 }

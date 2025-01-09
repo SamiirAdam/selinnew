@@ -16,7 +16,7 @@ export default function Hero() {
               Adam loves me!
             </p>
             <div className="mt-8">
-              <Button asChild className="bg-purple-700 text-white border-black border-1">
+              <Button asChild className="bg-purple-700 text-white font-bold border-black border-1">
                 <a href="#contact">Get in Touch</a>
               </Button>
             </div>

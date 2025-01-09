@@ -16,7 +16,7 @@ export default function Contact() {
         <div>
           <Textarea placeholder="Your Message" required />
         </div>
-        <Button type="submit" className="w-full">Send Message</Button>
+        <Button type="submit" className="w-full bg-purple-700 font-bold text-white">Send Message</Button>
       </form>
     </section>
   )

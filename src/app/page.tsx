@@ -6,7 +6,7 @@ import Contact from './../components/Contact'
 
 export default function PortfolioPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="flex flex-col max-h-screen w-full text-foreground">
       <Header />
       <main>
         <Hero />

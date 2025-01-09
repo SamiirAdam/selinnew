@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   return (
-    <section className="container py-24 sm:py-32">
-      <div className="flex flex-col items-center text-center">
+    <section className="flex w-full px-20 sm:px-5 py-24 sm:py-32">
+      <div className="flex w-full flex-col items-center text-center">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
           Hi, My name is <span className="text-primary">Selin Yucelbak</span>
         </h1>

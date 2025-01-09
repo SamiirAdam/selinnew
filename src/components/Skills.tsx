@@ -1,13 +1,12 @@
 import { Badge } from "@/components/ui/badge"
 
 const skills = [
-  "HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", 
-  "Node.js", "Express", "MongoDB", "SQL", "Git", "Responsive Design"
+  "Loving Adam", "Nice", "Good at RDR", "Good friend"
 ]
 
 export default function Skills() {
   return (
-    <section id="skills" className="container py-24 sm:py-32">
+    <section id="skills" className="flex flex-col py-24 sm:py-32">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Skills</h2>
       <div className="flex flex-wrap justify-center gap-4">
         {skills.map((skill, index) => (

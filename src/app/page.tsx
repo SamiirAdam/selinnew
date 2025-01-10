@@ -18,7 +18,7 @@ export default function PortfolioPage() {
       <div className="flex flex-col max-h-screen w-full text-foreground relative">
         <Header />
         <main>
-          <ClickableCard />
+          {/* <ClickableCard /> */}
           <Projects />
           <Skills />
           <Contact />
